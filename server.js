@@ -7,9 +7,9 @@ connectDB();
 
 const port = process.env.PORT || 5000;
 
-/** Routers */
-const usersRouter = require("./routes/users");
-/********** */
+// /** Routers */
+// const usersRouter = require("./routes/users");
+// /********** */
 
 const app = express();
 
@@ -29,7 +29,9 @@ app.get("/", (req, res) => {
     },
   });
 });
-
+/** Routers */
+const usersRouter = require("./routes/users");
+/********** */
 /** users routes */
 app.use("/api/users", usersRouter);
 /*************** */
